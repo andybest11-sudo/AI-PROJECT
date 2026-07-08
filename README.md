@@ -18,3 +18,4 @@ Andrew Taylor
 
 ## Goal
 
+My goal is to become an AI Web Developer & Automation Specialist by mastering AI-assisted web development, automation workflows, AI chatbots, and AI agents while building real-world projects.
