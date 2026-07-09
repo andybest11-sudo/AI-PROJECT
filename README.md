@@ -14,8 +14,21 @@ This repository contains my AI learning projects as I work through the **AI Web 
 
 ## Author
 
-Andrew Taylor
+Andrew Achemu
 
 ## Goal
 
 My goal is to become an AI Web Developer & Automation Specialist by mastering AI-assisted web development, automation workflows, AI chatbots, and AI agents while building real-world projects.
+Create-Login-Page.md
+
+Create-Dashboard.md
+
+Review-PHP-Code.md
+
+Debug-JavaScript.md
+
+Optimize-SQL.md
+
+Build-Navbar.md
+
+Generate-API.md
