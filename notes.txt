@@ -1,1 +1,71 @@
 Learning Git is fun!git
+
+Senior Developer Tip
+
+Many developers follow this routine every time they finish a task:
+git status
+git add .
+git status
+git commit -m "Describe the change"
+git push
+
+AI Web Developer Master Roadmap (2026)
+Chapter 4 – Lesson 5: Mastering AI Conversations for Software Development
+
+Estimated Time: 2–3 Hours
+Difficulty: Intermediate
+Why This Skill Matters
+
+Many beginners ask AI questions like:
+
+"Create a login page."
+
+AI can generate something, but it doesn't know:
+
+What language you're using.
+What framework you're using.
+Your database structure.
+Your coding style.
+Your project architecture.
+
+Professional developers provide context first.
+Example: Poor Prompt
+Create a login page.
+
+Possible problems:
+
+Uses the wrong language.
+Doesn't match your project.
+Doesn't connect to your database.
+Doesn't follow MVC.
+Doesn't use Bootstrap.
+
+Example: Better Prompt
+Act as a Senior PHP Developer.
+
+I am building a Real Estate Management System called KITAB.
+
+The project uses:
+
+- PHP
+- MySQL
+- Bootstrap 5
+- MVC Architecture
+
+Task:
+
+Create a secure login page.
+
+Requirements:
+
+- Email
+- Password
+- Remember Me
+- Prepared Statements
+- Password Verify
+- Bootstrap 5
+- Mobile Responsive
+
+Explain every step.
+
+Notice how much more useful that is.
