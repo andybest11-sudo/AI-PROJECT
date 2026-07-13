@@ -1,3 +1,5 @@
+
+
 *{
     margin:0;
     padding:0;
@@ -73,5 +75,300 @@ button{
     border:none;
 
     cursor:pointer;
+
+}
+/* =================================== */
+/* HERO SECTION */
+/* =================================== */
+
+.hero{
+    text-align: center;
+    padding: 120px 20px;
+}
+
+/* Container inside Hero */
+.hero-content{
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Greeting */
+.hero h2{
+    color: #555;
+    font-size: 28px;
+}
+
+/* Name */
+.hero h1{
+    font-size: 60px;
+    margin: 15px 0;
+}
+
+/* Job Title */
+.hero h3{
+    color: #0066ff;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Description */
+.hero p{
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+/* Hire Me Button */
+.btn{
+    display: inline-block;
+    margin-top: 35px;
+    padding: 15px 40px;
+    background: #0066ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Button Hover Effect */
+.btn:hover{
+    background: #004ecc;
+}
+/* ===================================== */
+/* ABOUT SECTION */
+/* ===================================== */
+
+.about{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding:80px 10%;
+
+    flex-wrap:wrap;
+
+}
+
+/* Left Side */
+
+.about-image img{
+
+    width:300px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+/* Right Side */
+
+.about-text{
+
+    max-width:600px;
+
+}
+
+.about-text h2{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.about-text p{
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+/* ========================================= */
+/* SKILLS SECTION */
+/* ========================================= */
+
+.about-text ul{
+
+    margin-top:20px;
+
+    margin-bottom:30px;
+
+    padding-left:20px;
+
+}
+
+.about-text li{
+
+    margin-bottom:12px;
+
+    font-size:18px;
+    list-style-type: none;
+
+}
+
+/* =====================================================
+   GLOBAL STYLES
+   ===================================================== */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+} */
+
+
+/* =====================================================
+   HEADER SECTION
+   ===================================================== */
+
+
+/* =====================================================
+   HERO SECTION
+   ===================================================== */
+
+
+/* =====================================================
+   ABOUT SECTION
+   ===================================================== */
+
+
+/* =====================================================
+   SERVICES SECTION
+   ===================================================== */
+
+
+/* =====================================================
+   PROJECTS SECTION
+   ===================================================== */
+
+
+/* =====================================================
+   CONTACT SECTION
+   ===================================================== */
+
+
+/* =====================================================
+   FOOTER SECTION
+   ===================================================== */
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+   /* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+/* Tablet Devices */
+@media (max-width: 768px) {
+
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    /* ==========================================
+   HERO SECTION (Mobile)
+========================================== */
+
+.hero{
+
+    /* Less vertical spacing */
+    padding:40px 15px;
+
+}
+
+.hero h2{
+
+    /* Mobile heading */
+    font-size:32px;
+
+}
+
+.hero p{
+
+    /* Mobile paragraph */
+    font-size:18px;
+
+}
+
+.hero .btn{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:18px;
+
+}
+
+}
+
+/* =====================================================
+   Tablet Devices
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* Header Layout */
+    header{
+        flex-direction: column;
+        text-align: center;
+        padding:20px;
+    }
+
+    /* Navigation Menu */
+    nav{
+        margin-top:15px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+}
+
+/* ==========================================
+   HERO SECTION (Tablet)
+========================================== */
+
+.hero{
+
+    /* Reduce spacing on smaller screens */
+    padding:60px 20px;
+
+}
+
+.hero h2{
+
+    /* Smaller heading */
+    font-size:42px;
+
+}
+
+.hero p{
+
+    /* Easier to read on tablets */
+    font-size:22px;
+
+}
+
+.hero .btn{
+
+    /* Slightly smaller button */
+    padding:12px 28px;
 
 }
