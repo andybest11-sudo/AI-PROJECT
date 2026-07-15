@@ -503,3 +503,149 @@ body {
     padding:12px 28px;
 
 }
+
+/* ==========================================
+   SERVICES SECTION
+========================================== */
+
+.services{
+
+    /* Space above and below the section */
+    padding:80px 10%;
+
+    /* Light background */
+    background:#f5f5f5;
+
+    /* Center all text */
+    text-align:center;
+
+}
+
+/* ==========================================
+   SERVICES TITLE
+========================================== */
+
+.services h2{
+
+    font-size:40px;
+
+    margin-bottom:50px;
+
+}
+
+/* ==========================================
+   FLEX CONTAINER
+========================================== */
+
+.service-container{
+
+    /* Turn this into a Flexbox container */
+    display:flex;
+
+    /* Put equal space between the cards */
+    justify-content:center;
+
+    /* Align cards neatly */
+    align-items:stretch;
+
+    /* Space between each card */
+    gap:30px;
+
+    /* Allow cards to move to the next row */
+    flex-wrap:wrap;
+
+}
+
+/* ==========================================
+   SERVICE CARD
+========================================== */
+
+.service-card{
+
+    /* White background */
+    background:white;
+
+    /* Space inside the card */
+    padding:30px;
+
+    /* Rounded corners */
+    border-radius:15px;
+
+    /* Nice shadow */
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    /* Each card width */
+    width:320px;
+
+    /* Smooth animation */
+    transition:.3s;
+
+}
+
+/* ==========================================
+   SERVICE CARD HOVER
+========================================== */
+
+.service-card:hover{
+
+    /* Lift the card slightly */
+    transform:translateY(-10px);
+
+    /* Stronger shadow */
+    box-shadow:0 12px 25px rgba(0,0,0,.2);
+
+}
+
+/* ==========================================
+   SERVICE CARD TITLE
+========================================== */
+
+.service-card h3{
+
+    font-size:26px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================
+   SERVICE CARD PARAGRAPH
+========================================== */
+
+.service-card p{
+
+    font-size:18px;
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   RESPONSIVE SERVICES
+========================================== */
+
+@media(max-width:768px){
+
+    .service-container{
+
+        /* Stack the cards vertically */
+        flex-direction:column;
+
+        /* Center them */
+        align-items:center;
+
+    }
+
+    .service-card{
+
+        /* Fill most of the screen */
+        width:100%;
+
+        /* Don't become wider than 400px */
+        max-width:400px;
+
+    }
+
+}
