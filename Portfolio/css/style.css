@@ -1,651 +1,664 @@
-
-
+/* Reset */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* Body */
 body{
-
     font-family:Arial, Helvetica, sans-serif;
-
     background:#f4f4f4;
-
 }
+
+
+/* ==========================
+   HEADER
+========================== */
 
 header{
-
-    background:#222;
-
-    color:white;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:20px 50px;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 20px 10%;
 }
 
-/* ==========================================
-   NAVIGATION LINKS
-========================================== */
+header h1{
+    font-size: 42px;
+}
 
 nav a{
-
-    /* Navigation text color */
-    color:white;
-
-    /* Remove underline */
-    text-decoration:none;
-
-    /* Space between links */
-    margin-left:20px;
-
-    /* Smooth color animation */
-    transition:0.3s;
-
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 20px;
+    transition: .3s;
 }
-
-/* ==========================================
-   NAVIGATION HOVER EFFECT
-========================================== */
 
 nav a:hover{
-
-    /* Highlight color */
-    color:#00bfff;
-
+    color: #2563eb;
 }
+
+/* ==========================
+   HOME SECTION
+========================== */
 
 .hero{
-
-    text-align:center;
-
-    margin-top:100px;
-
-}
-
-.hero h2{
-
-    font-size:48px;
-
-}
-
-.hero p{
-
-    margin-top:20px;
-
-    font-size:20px;
-
-}
-
-button{
-
-    margin-top:30px;
-
-    padding:15px 30px;
-
-    background:#0066ff;
-
-    color:white;
-
-    border:none;
-
-    cursor:pointer;
-
-}
-/* =================================== */
-/* HERO SECTION */
-/* =================================== */
-
-.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 120px 20px;
+    min-height: 90vh;
+    padding: 80px 10%;
 }
 
-/* Container inside Hero */
 .hero-content{
     max-width: 900px;
-    margin: auto;
 }
 
-/* Greeting */
-.hero h2{
-    color: #555;
-    font-size: 28px;
-}
-
-/* Name */
-.hero h1{
-    font-size: 60px;
-    margin: 15px 0;
-}
-
-/* Job Title */
-.hero h3{
-    color: #0066ff;
+.hero-content h2{
+    font-size: 55px;
     margin-bottom: 20px;
-    font-size: 28px;
 }
 
-/* Description */
-.hero p{
-    max-width: 700px;
-    margin: auto;
+.hero-content h1{
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.hero-content h3{
+    font-size: 36px;
+    color: #2563eb;
+    margin-bottom: 25px;
+}
+
+.hero-content p{
+    font-size: 24px;
+    color: #555;
     line-height: 1.8;
-    font-size: 20px;
+    margin-bottom: 35px;
 }
 
-/* Hire Me Button */
-/* ==========================================
-   BUTTON
-========================================== */
-
-.btn{
+.hero-content a{
 
     display:inline-block;
 
-    background:#0066ff;
+    background:#2563eb;
 
     color:white;
 
-    padding:15px 40px;
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:8px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.hero-content a:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+/* ==========================
+   ABOUT SECTION
+========================== */
+/*====================================
+          ABOUT SECTION
+====================================*/
+
+.about{
+
+    padding:80px 10%;
+
+}
+
+.about-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:70px;
+
+    flex-wrap:wrap;
+
+}
+
+.about-image{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.about-image img{
+
+    width:350px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+}
+
+.about-content{
+
+    flex:2;
+
+}
+
+.about-content h2{
+
+    font-size:50px;
+
+    margin-bottom:25px;
+
+}
+
+.about-content h3{
+
+    font-size:32px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.about-content p{
+
+    font-size:20px;
+
+    color:#555;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+}
+
+.about-content a{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:15px 35px;
+
+    background:#2563eb;
+
+    color:#fff;
 
     text-decoration:none;
 
     border-radius:8px;
 
+    font-size:18px;
+
     font-weight:bold;
 
-    /* Smooth animation */
-    transition:0.3s;
+    transition:.3s;
 
 }
 
-/* ==========================================
-   BUTTON HOVER
-========================================== */
+.about-content a:hover{
 
-.btn:hover{
-
-    /* Darker blue */
-    background:#004ecc;
-
-    /* Slightly enlarge */
-    transform:scale(1.05);
+    background:#1d4ed8;
 
 }
-/* ===================================== */
-/* ABOUT SECTION */
-/* ===================================== */
 
-.about{
-     display:flex;
 
-    justify-content:space-between;
+/*====================================
+            SKILLS
+====================================*/
 
-    align-items:center;
-
-    gap:50px;
-
-    padding:80px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:60px;
+.skills{
 
     padding:80px 10%;
 
-    flex-wrap:wrap;
-
-}
-
-/* ==========================================
-   PROFILE IMAGE
-========================================== */
-
-.about-image img{
-
-    width:300px;
-
-    border-radius:15px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
-
-    /* Smooth animation */
-    transition:0.4s;
-
-}
-
-/* ==========================================
-   PROFILE IMAGE HOVER
-========================================== */
-
-.about-image img:hover{
-
-    /* Slightly enlarge */
-    transform:scale(1.05);
-
-}
-
-
-
-
-/* Right Side */
-
-.about-text{
-
-    max-width:600px;
-
-}
-
-.about-text h2{
-
-    font-size:40px;
-
-    margin-bottom:20px;
-
-}
-
-.about-text p{
-
-    line-height:1.8;
-
-    margin-bottom:20px;
-
-}
-/* ========================================= */
-/* SKILLS SECTION */
-/* ========================================= */
-
-.about-text ul{
-
-    margin-top:20px;
-
-    margin-bottom:30px;
-
-    padding-left:20px;
-
-}
-
-.about-text li{
-
-    margin-bottom:12px;
-
-    font-size:18px;
-    list-style-type: none;
-
-}
-
-/* =====================================================
-   GLOBAL STYLES
-   ===================================================== */
-
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-} */
-
-
-/* =====================================================
-   HEADER SECTION
-   ===================================================== */
-
-
-/* =====================================================
-   HERO SECTION
-   ===================================================== */
-
-
-/* =====================================================
-   ABOUT SECTION
-   ===================================================== */
-
-
-/* =====================================================
-   SERVICES SECTION
-   ===================================================== */
-
-
-/* =====================================================
-   PROJECTS SECTION
-   ===================================================== */
-
-
-/* =====================================================
-   CONTACT SECTION
-   ===================================================== */
-
-
-/* =====================================================
-   FOOTER SECTION
-   ===================================================== */
-
-
-/* =====================================================
-   RESPONSIVE DESIGN
-   ===================================================== */
-
-   /* =====================================================
-   RESPONSIVE DESIGN
-   ===================================================== */
-
-/* Tablet Devices */
-@media (max-width: 768px) {
-    /* =====================================================
-   ABOUT SECTION (TABLET)
-   ===================================================== */
-
-.about{
-
-    /* Stack items vertically */
-    flex-direction:column;
-
-    text-align:center;
-
-    padding:50px 20px;
-
-}
-
-.about-image img{
-
-    /* Slightly smaller image */
-    width:280px;
-
-}
-
-.about-text{
-
-    width:100%;
-
-}
-
-}
-
-/* Mobile Devices */
-@media (max-width: 480px) {
-
-
-    /* ==========================================
-   HERO SECTION (Mobile)
-========================================== */
-/* =====================================================
-   ABOUT SECTION (MOBILE)
-   ===================================================== */
-
-.about{
-
-    padding:30px 15px;
-
-}
-
-.about-image img{
-
-    width:220px;
-
-}
-
-.about-text h2{
-
-    font-size:32px;
-
-}
-
-.about-text p{
-
-    font-size:17px;
-
-    line-height:1.8;
-
-}
-
-
-.hero{
-
-    /* Less vertical spacing */
-    padding:40px 15px;
-
-}
-
-.hero h2{
-
-    /* Mobile heading */
-    font-size:32px;
-
-}
-
-.hero p{
-
-    /* Mobile paragraph */
-    font-size:18px;
-
-}
-
-.hero .btn{
-
-    width:100%;
-
-    padding:15px;
-
-    font-size:18px;
-
-}
-
-}
-
-/* =====================================================
-   Tablet Devices
-   ===================================================== */
-
-@media (max-width: 768px) {
-
-    /* Header Layout */
-    header{
-        flex-direction: column;
-        text-align: center;
-        padding:20px;
-    }
-
-    /* Navigation Menu */
-    nav{
-        margin-top:15px;
-    }
-
-    nav a{
-        display:block;
-        margin:10px 0;
-    }
-
-}
-
-/* ==========================================
-   HERO SECTION (Tablet)
-========================================== */
-
-.hero{
-
-    /* Reduce spacing on smaller screens */
-    padding:60px 20px;
-
-}
-
-.hero h2{
-
-    /* Smaller heading */
-    font-size:42px;
-
-}
-
-.hero p{
-
-    /* Easier to read on tablets */
-    font-size:22px;
-
-}
-
-.hero .btn{
-
-    /* Slightly smaller button */
-    padding:12px 28px;
-
-}
-
-/* ==========================================
-   SERVICES SECTION
-========================================== */
-
-.services{
-
-    /* Space above and below the section */
-    padding:80px 10%;
-
-    /* Light background */
-    background:#f5f5f5;
-
-    /* Center all text */
     text-align:center;
 
 }
 
-/* ==========================================
-   SERVICES TITLE
-========================================== */
+.skills h2{
 
-.services h2{
-
-    font-size:40px;
+    font-size:50px;
 
     margin-bottom:50px;
 
 }
 
-/* ==========================================
-   FLEX CONTAINER
-========================================== */
+.skills-container{
 
-.service-container{
+    display:grid;
 
-    /* Turn this into a Flexbox container */
-    display:flex;
+    grid-template-columns:repeat(4,1fr);
 
-    /* Put equal space between the cards */
-    justify-content:center;
-
-    /* Align cards neatly */
-    align-items:stretch;
-
-    /* Space between each card */
     gap:30px;
-
-    /* Allow cards to move to the next row */
-    flex-wrap:wrap;
 
 }
 
-/* ==========================================
-   SERVICE CARD
-========================================== */
+.skill-card{
 
-.service-card{
+    background:#fff;
 
-    /* White background */
-    background:white;
-
-    /* Space inside the card */
     padding:30px;
 
-    /* Rounded corners */
     border-radius:15px;
 
-    /* Nice shadow */
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 
-    /* Each card width */
-    width:320px;
-
-    /* Smooth animation */
     transition:.3s;
 
 }
 
-/* ==========================================
-   SERVICE CARD HOVER
-========================================== */
+.skill-card:hover{
 
-.service-card:hover{
-
-    /* Lift the card slightly */
     transform:translateY(-10px);
 
-    /* Stronger shadow */
-    box-shadow:0 12px 25px rgba(0,0,0,.2);
+}
+
+.skill-card h3{
+
+    font-size:24px;
+
+    margin-bottom:15px;
 
 }
 
-/* ==========================================
-   SERVICE CARD TITLE
-========================================== */
-
-.service-card h3{
-
-    font-size:26px;
-
-    margin-bottom:20px;
-
-}
-
-/* ==========================================
-   SERVICE CARD PARAGRAPH
-========================================== */
-
-.service-card p{
-
-    font-size:18px;
+.skill-card p{
 
     color:#555;
 
-    line-height:1.7;
+    font-size:18px;
+
+}
+/* ==========================
+   SERVICES
+========================== */
+
+.services{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.services h2{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.service-container{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
 
 }
 
-/* ==========================================
-   RESPONSIVE SERVICES
-========================================== */
+.service-card{
 
-@media(max-width:768px){
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+
+    transition: .3s;
+}
+
+.service-card:hover{
+
+    transform: translateY(-10px);
+
+}
+
+.service-card h3{
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+}
+
+.service-card p{
+
+    font-size: 20px;
+
+    color: #555;
+
+    line-height: 1.8;
+
+}
+
+/* ==========================
+   PROJECTS
+========================== */
+
+.projects{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.projects h2{
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.project-container{
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+
+}
+
+.project-card{
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+
+    transition: .3s;
+}
+
+.project-card:hover{
+
+    transform: translateY(-10px);
+
+}
+
+.project-card h3{
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+}
+
+.project-card p{
+
+    font-size: 20px;
+
+    color: #555;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+.project-buttons{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+.project-buttons a{
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: .3s;
+
+}
+
+.project-buttons a:hover{
+
+    background: #1d4ed8;
+
+}
+
+
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:992px){
 
     .service-container{
-
-        /* Stack the cards vertically */
-        flex-direction:column;
-
-        /* Center them */
-        align-items:center;
-
+        grid-template-columns: repeat(2,1fr);
     }
 
-    .service-card{
-
-        /* Fill most of the screen */
-        width:100%;
-
-        /* Don't become wider than 400px */
-        max-width:400px;
-
+    .project-container{
+        grid-template-columns: repeat(2,1fr);
     }
+.about-container{
+
+    flex-direction:column;
+
+    text-align:center;
 
 }
+
+.skills-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    header{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav{
+        margin-top: 20px;
+    }
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Hero */
+
+.hero{
+
+    padding:60px 20px;
+
+}
+
+.hero-content h2{
+
+    font-size:40px;
+
+}
+
+.hero-content h1{
+
+    font-size:50px;
+
+}
+
+.hero-content h3{
+
+    font-size:28px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+
+}
+
+/* About */
+
+.about{
+
+    padding:60px 20px;
+
+}
+
+.about h2{
+
+    font-size:40px;
+
+}
+
+.about-container{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.about-image img{
+
+    width:250px;
+
+}
+
+.about-content h3{
+
+    font-size:30px;
+
+}
+
+.about-content p{
+
+    font-size:18px;
+
+}
+
+    .services,
+    .projects{
+        padding: 60px 20px;
+    }
+
+    .services h2,
+    .projects h2{
+        font-size: 40px;
+    }
+
+    .service-container,
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+
+    .service-card,
+    .project-card{
+        width: 100%;
+    }
+
+    .service-card h3,
+    .project-card h3{
+        font-size: 28px;
+    }
+
+    .service-card p,
+    .project-card p{
+        font-size: 18px;
+    }
+
+    .project-buttons{
+        flex-direction: column;
+    }
+
+    .project-buttons a{
+        width: 100%;
+    }
+
+.about{
+
+    padding:60px 20px;
+
+}
+
+.about-image img{
+
+    width:250px;
+
+}
+
+.about-content h2{
+
+    font-size:40px;
+
+}
+
+.about-content h3{
+
+    font-size:28px;
+
+}
+
+.about-content p{
+
+    font-size:18px;
+
+}
+
+.skills{
+
+    padding:60px 20px;
+
+}
+
+.skills h2{
+
+    font-size:40px;
+
+}
+
+.skills-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+}
+   
