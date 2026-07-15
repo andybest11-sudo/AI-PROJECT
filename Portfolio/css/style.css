@@ -30,13 +30,34 @@ header{
 
 }
 
+/* ==========================================
+   NAVIGATION LINKS
+========================================== */
+
 nav a{
 
+    /* Navigation text color */
     color:white;
 
+    /* Remove underline */
     text-decoration:none;
 
+    /* Space between links */
     margin-left:20px;
+
+    /* Smooth color animation */
+    transition:0.3s;
+
+}
+
+/* ==========================================
+   NAVIGATION HOVER EFFECT
+========================================== */
+
+nav a:hover{
+
+    /* Highlight color */
+    color:#00bfff;
 
 }
 
@@ -120,26 +141,58 @@ button{
 }
 
 /* Hire Me Button */
+/* ==========================================
+   BUTTON
+========================================== */
+
 .btn{
-    display: inline-block;
-    margin-top: 35px;
-    padding: 15px 40px;
-    background: #0066ff;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
+
+    display:inline-block;
+
+    background:#0066ff;
+
+    color:white;
+
+    padding:15px 40px;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    /* Smooth animation */
+    transition:0.3s;
+
 }
 
-/* Button Hover Effect */
+/* ==========================================
+   BUTTON HOVER
+========================================== */
+
 .btn:hover{
-    background: #004ecc;
+
+    /* Darker blue */
+    background:#004ecc;
+
+    /* Slightly enlarge */
+    transform:scale(1.05);
+
 }
 /* ===================================== */
 /* ABOUT SECTION */
 /* ===================================== */
 
 .about{
+     display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:80px;
 
     display:flex;
 
@@ -155,7 +208,9 @@ button{
 
 }
 
-/* Left Side */
+/* ==========================================
+   PROFILE IMAGE
+========================================== */
 
 .about-image img{
 
@@ -165,7 +220,24 @@ button{
 
     box-shadow:0 5px 15px rgba(0,0,0,.2);
 
+    /* Smooth animation */
+    transition:0.4s;
+
 }
+
+/* ==========================================
+   PROFILE IMAGE HOVER
+========================================== */
+
+.about-image img:hover{
+
+    /* Slightly enlarge */
+    transform:scale(1.05);
+
+}
+
+
+
 
 /* Right Side */
 
@@ -274,14 +346,73 @@ body {
 
 /* Tablet Devices */
 @media (max-width: 768px) {
+    /* =====================================================
+   ABOUT SECTION (TABLET)
+   ===================================================== */
+
+.about{
+
+    /* Stack items vertically */
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+.about-image img{
+
+    /* Slightly smaller image */
+    width:280px;
+
+}
+
+.about-text{
+
+    width:100%;
+
+}
 
 }
 
 /* Mobile Devices */
 @media (max-width: 480px) {
+
+
     /* ==========================================
    HERO SECTION (Mobile)
 ========================================== */
+/* =====================================================
+   ABOUT SECTION (MOBILE)
+   ===================================================== */
+
+.about{
+
+    padding:30px 15px;
+
+}
+
+.about-image img{
+
+    width:220px;
+
+}
+
+.about-text h2{
+
+    font-size:32px;
+
+}
+
+.about-text p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
 
 .hero{
 
