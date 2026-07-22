@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Andrew Achemu</title>
 
+      <!-- ===================================
+     FONT AWESOME ICONS
+=================================== -->
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -25,87 +34,132 @@
 
     </header>
 
-    <!-- Projects Section -->
 
-    <section class="projects">
+    <!-- ===================================
+        PROJECT SEARCH
+=================================== -->
 
-        <h2>My Projects</h2>
+<div class="search-box">
 
-        <div class="project-container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search projects...">
 
-            <!-- Card 1 -->
+</div>
 
-            <div class="project-card">
 
-                <h3>🏠 Real Estate Management System</h3>
+<!-- ===================================
+        PROJECT FILTER BUTTONS
+=================================== -->
 
-                <p>
-                    Complete property listing platform where buyers,
-                    sellers and administrators manage real estate.
-                </p>
+<div class="filter-buttons">
 
-                <div class="project-buttons">
+    <button class="filter-btn active" data-category="all">
+        All
+    </button>
 
-                    <a href="#">Live Demo</a>
+    <button class="filter-btn" data-category="html">
+        HTML
+    </button>
 
-                    <a href="#">GitHub</a>
+    <button class="filter-btn" data-category="css">
+        CSS
+    </button>
 
-                </div>
+    <button class="filter-btn" data-category="javascript">
+        JavaScript
+    </button>
 
-            </div>
+    <button class="filter-btn" data-category="php">
+        PHP
+    </button>
 
-            <!-- Card 2 -->
+    <button class="filter-btn" data-category="ai">
+        AI
+    </button>
 
-            <div class="project-card">
+</div>
 
-                <h3>🤖 AI Chatbot</h3>
+  <!-- ================================
+     PROJECT CONTAINER
+================================ -->
 
-                <p>
-                    AI-powered chatbot built with JavaScript and OpenAI APIs.
-                </p>
+<div class="project-container" id="projectsContainer">
 
-                <div class="project-buttons">
+    <!--
+        JavaScript will automatically
+        generate the project cards here.
+    -->
 
-                    <a href="#">Live Demo</a>
-
-                    <a href="#">GitHub</a>
-
-                </div>
-
-            </div>
-
-            <!-- Card 3 -->
-
-            <div class="project-card">
-
-                <h3>🌐 Portfolio Website</h3>
-
-                <p>
-                    Responsive portfolio website showcasing my skills,
-                    services and projects.
-                </p>
-
-                <div class="project-buttons">
-
-                    <a href="#">Live Demo</a>
-
-                    <a href="#">GitHub</a>
-
-                </div>
-
-            </div>
-
-        </div>
+</div>
 
     </section>
 
-    <!-- Footer -->
+   <!-- ===================================
+     FOOTER
+=================================== -->
 
-    <footer>
+<footer>
 
-        <p>© 2026 Andrew Achemu. All Rights Reserved.</p>
+    <div class="footer-container">
 
-    </footer>
+        <h3>Andrew Achemu</h3>
+
+        <p>
+
+            AI Web Developer |
+            Front-End Developer |
+            Digital Marketer
+
+        </p>
+
+        <div class="social-links">
+
+            <a href="#">
+
+                <i class="fab fa-facebook-f"></i>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fab fa-linkedin-in"></i>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fab fa-github"></i>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fab fa-whatsapp"></i>
+
+            </a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Andrew Achemu.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+
+</footer>
+  
+<!-- ===================================
+     JAVASCRIPT
+=================================== -->
+
+<script src="js/script.js"></script>
+
 
 </body>
 </html>

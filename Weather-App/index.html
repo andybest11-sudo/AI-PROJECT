@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ===============================
+            WEATHER CONTAINER
+    ================================ -->
+
+    <div class="weather-container">
+
+        <h1>🌤 Weather App</h1>
+
+        <p>
+            Search any city in the world.
+        </p>
+
+        <p id="currentDateTime"></p>
+        <!-- Search Box -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter City Name">
+
+            <button id="searchBtn">
+
+                Get Weather
+
+            </button>
+
+        </div>
+
+        <!-- Weather Result -->
+
+        <div id="weatherResult">
+
+
+            <p id="loading" style="display:none; color:blue;">
+    Loading weather...
+</p>
+
+<p id="errorMessage" style="display:none; color:red;">
+    ❌ City not found!
+</p>
+            <h2>Weather Information</h2>
+<img id="weatherIcon" src="" alt="Weather Icon">
+            <p>📍 City:
+                <span id="city"></span>
+            </p>
+
+            <p>🌍 Country:
+                <span id="country"></span>
+            </p>
+
+            <p>🌡 Temperature:
+                <span id="temperature"></span>
+            </p>
+
+            <p>☁ Weather:
+                <span id="weather"></span>
+            </p>
+
+            <p>💧 Humidity:
+                <span id="humidity"></span>
+            </p>
+
+            <p>💨 Wind Speed:
+                <span id="wind"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

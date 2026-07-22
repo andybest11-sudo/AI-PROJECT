@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOM Practice</title>
+
+    <style>
+
+        body{
+
+            font-family: Arial, sans-serif;
+
+            text-align:center;
+
+            margin-top:100px;
+
+            background:#f4f4f4;
+
+        }
+
+        h1{
+
+            color:#333;
+
+        }
+
+        button{
+
+            padding:12px 25px;
+
+            font-size:18px;
+
+            background:#2563eb;
+
+            color:white;
+
+            border:none;
+
+            border-radius:8px;
+
+            cursor:pointer;
+
+        }
+
+        button:hover{
+
+            background:#1d4ed8;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="title">Welcome to JavaScript</h1>
+
+    <button id="changeBtn">
+
+        Click Me
+
+
+    </button>
+
+
+  <script>
+
+    // Find the heading
+    let title = document.getElementById("title");
+
+    // Find the button
+    let button = document.getElementById("changeBtn");
+
+    // Wait for the button to be clicked
+    button.onclick = function(){
+
+        title.innerHTML = "You clicked the button! 🎉";
+
+    };
+
+</script>
+</body>
+
+</html>

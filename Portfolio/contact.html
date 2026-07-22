@@ -1,17 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
+
+<header>
+
+    <h1>Andrew Achemu</h1>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+<section class="contact">
+
     <h2>Contact Me</h2>
 
-<p>Name: Andrew Achemu</p>
+    <p class="contact-text">
+        I'd love to hear from you. Let's build something amazing together.
+    </p>
 
-<p>Email: andrew@example.com</p>
+    <div class="contact-container">
 
-<p>GitHub: github.com/andybest11-sudo</p>
+        <div class="contact-info">
+
+            <h3>Contact Information</h3>
+
+            <p>📧 Email</p>
+            <span>achemumaji@gmail.com</span>
+
+            <p>📱 Phone</p>
+            <span>+234 8109262221</span>
+
+            <p>📍 Location</p>
+            <span>Lagos, Nigeria</span>
+
+        </div>
+
+        <div class="contact-form">
+
+<!--====================================
+        CONTACT FORM
+=====================================-->
+<form id="contactForm">
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Your Name">
+
+    <small id="nameError" class="error"></small>
+
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Your Email">
+
+    <small id="emailError" class="error"></small>
+
+
+    <input
+        type="text"
+        id="subject"
+        placeholder="Subject">
+
+    <small id="subjectError" class="error"></small>
+
+
+    <textarea
+        id="message"
+        rows="7"
+        placeholder="Your Message"></textarea>
+
+    <small id="messageError" class="error"></small>
+
+
+    <button type="submit">
+        Send Message
+    </button>
+
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>&copy; 2026 Andrew Achemu. All Rights Reserved.</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
